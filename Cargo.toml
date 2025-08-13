@@ -31,8 +31,8 @@ strobe-rs = "0.10"
 
 [dev-dependencies]
 strobe-rs = "0.10"
-curve25519-dalek = { git = "https://github.com/xelis-project/curve25519-dalek", tag = "v4.2.0" }
-rand_chacha = "0.9"
+curve25519-dalek = { git = "https://github.com/xelis-project/curve25519-dalek", features = ["rand_core"], tag = "v4.2.0" }
+rand_chacha = "0.3"
 
 [features]
 default = ["std"]
