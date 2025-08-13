@@ -22,16 +22,17 @@ exclude = [".travis.yml", ".gitignore"]
 features = ["nightly"]
 
 [dependencies]
-keccak = { version = "0.1.0", default-features = false }
-byteorder = { version = "1.2.4", default-features = false }
+keccak = { version = "0.1", default-features = false }
+byteorder = { version = "1.2", default-features = false }
 zeroize = { version = "1", default-features = false, features = ["zeroize_derive"] }
 rand_core = { version = "0.6", default-features = false }
-hex = {version = "0.3", default-features = false, optional = true}
+hex = { version = "0.3", default-features = false, optional = true }
+strobe-rs = "0.10"
 
 [dev-dependencies]
-strobe-rs = "0.5"
-curve25519-dalek = { version = "4", package = "curve25519-dalek-ng" }
-rand_chacha = "0.3"
+strobe-rs = "0.10"
+curve25519-dalek = { git = "https://github.com/xelis-project/curve25519-dalek", tag = "v4.2.0" }
+rand_chacha = "0.9"
 
 [features]
 default = ["std"]
