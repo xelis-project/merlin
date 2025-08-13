@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.1.0
+
+* Switch to `strobe-rs` `0.10` for Big-Endian support.
+* Remove `'static` lifetime requirement on `Transcript`.
+
 ## 3.0.0
 
 * Update `rand_core` to `0.6`.  Because traits from `rand_core` are part of the
