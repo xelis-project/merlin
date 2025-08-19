@@ -1,5 +1,8 @@
 # Changelog
 
+## 4.0.0
+* Update `rand_core` to `0.9` and `hex` to `0.4`.
+
 ## 3.1.0
 
 * Switch to `strobe-rs` `0.10` for Big-Endian support.
